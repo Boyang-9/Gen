@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Admin.NET.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Admin.NET.Application.Customer">
+            <summary>
+            客户组织机构表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.Pid">
+            <summary>
+            父Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.Pids">
+            <summary>
+            父Ids
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.MineGroupId">
+            <summary>
+            煤矿所属集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.CustomerType">
+            <summary>
+            客户组织类型（1:集团，2:公司，3:煤矿）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.Gps">
+            <summary>
+            GPS
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Customer.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.Types">
+            <summary>
+            项目类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.UserIds">
+            <summary>
+            负责人 (多对多)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.SupportType">
+            <summary>
+            支架型式
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.SupportModel">
+            <summary>
+            支架型号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.ProjectDate">
+            <summary>
+            立项日期
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.Remark">
+            <summary>
+            项目备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.CustomerGroup">
+            <summary>
+            客户集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.CustomerGroupId">
+            <summary>
+            客户集团编号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.CustomerMine">
+            <summary>
+            客户煤矿
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Project.CustomerMineId">
+            <summary>
+            客户煤矿编号
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.CustomerTypeEnum">
+            <summary>
+            客户机构类型
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.CustomerTypeEnum.GROUP">
+            <summary>
+            集团
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.CustomerTypeEnum.COMPANY">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.CustomerTypeEnum.MINE">
+            <summary>
+            煤矿
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.CustomerService">
+            <summary>
+            客户组织机构表服务
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.CustomerService.Page(Admin.NET.Application.CustomerInput)">
+            <summary>
+            分页查询客户组织机构表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.CustomerService.Add(Admin.NET.Application.AddCustomerInput)">
+            <summary>
+            增加客户组织机构表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Admin.NET.Application.CustomerService.FillPids(Admin.NET.Application.Customer)" -->
+        <member name="M:Admin.NET.Application.CustomerService.Delete(Admin.NET.Application.DeleteCustomerInput)">
+            <summary>
+            删除客户组织机构表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.CustomerService.Update(Admin.NET.Application.UpdateCustomerInput)">
+            <summary>
+            更新客户组织机构表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.CustomerService.Get(Admin.NET.Application.QueryeCustomerInput)">
+            <summary>
+            获取客户组织机构表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.CustomerService.List(Admin.NET.Application.CustomerInput)">
+            <summary>
+            获取客户组织机构表列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.CustomerService.GetCustomerTree">
+            <summary>
+            获取客户组织机构树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.CustomerDto">
+            <summary>
+            客户组织机构表输出参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.Pid">
+            <summary>
+            父Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.Pids">
+            <summary>
+            父Ids
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.MineGroupId">
+            <summary>
+            煤矿所属集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.CustomerType">
+            <summary>
+            客户组织类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.Gps">
+            <summary>
+            GPS
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerDto.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.CustomerInput">
+            <summary>
+            客户组织机构表输入参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerInput.Pid">
+            <summary>
+            父Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerInput.Pids">
+            <summary>
+            父Ids
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerInput.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerInput.CustomerType">
+            <summary>
+            客户组织类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerInput.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerInput.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerInput.Gps">
+            <summary>
+            GPS
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.AddCustomerInput.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.AddCustomerInput.CustomerType">
+            <summary>
+            客户组织类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.DeleteCustomerInput.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.UpdateCustomerInput.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.CustomerOutput">
+            <summary>
+            客户组织机构表输出参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.Pid">
+            <summary>
+            父Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.Pids">
+            <summary>
+            父Ids
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.MineGroupId">
+            <summary>
+            煤矿所属集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.CustomerType">
+            <summary>
+            客户组织类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.Gps">
+            <summary>
+            GPS
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.CustomerOutput.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.CustomerTreeNode">
+            <summary>
+            客户组织机构树
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.ProjectDto">
+            <summary>
+            项目信息输出参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.SysUserName">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.CustomerGroupName">
+            <summary>
+            客户集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.CustomerMineName">
+            <summary>
+            客户煤矿
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.UserIds">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.SupportType">
+            <summary>
+            支架型式
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.SupportModel">
+            <summary>
+            支架型号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.ProjectDate">
+            <summary>
+            立项日期
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.Remark">
+            <summary>
+            项目备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.CustomerGroupId">
+            <summary>
+            客户集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.CustomerMineId">
+            <summary>
+            客户煤矿
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectDto.Types">
+            <summary>
+            项目类型
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.ProjectInput">
+            <summary>
+            项目信息输入参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.UserIds">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.SupportType">
+            <summary>
+            支架型式
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.SupportModel">
+            <summary>
+            支架型号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.ProjectDate">
+            <summary>
+            立项日期
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.Remark">
+            <summary>
+            项目备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.CustomerGroupId">
+            <summary>
+            客户集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.CustomerMineId">
+            <summary>
+            客户煤矿
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectInput.Types">
+            <summary>
+            项目类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.AddProjectInput.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.AddProjectInput.Types">
+            <summary>
+            项目类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.DeleteProjectInput.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.UpdateProjectInput.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.ProjectOutput">
+            <summary>
+            项目信息输出参数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.UserIds">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.SupportType">
+            <summary>
+            支架型式
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.SupportModel">
+            <summary>
+            支架型号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.ProjectDate">
+            <summary>
+            立项日期
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.Remark">
+            <summary>
+            项目备注
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.CustomerGroupId">
+            <summary>
+            客户集团
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.CustomerMineId">
+            <summary>
+            客户煤矿
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.Id">
+            <summary>
+            Id主键
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ProjectOutput.Types">
+            <summary>
+            项目类型
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.ProjectService">
+            <summary>
+            项目信息服务
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.Page(Admin.NET.Application.ProjectInput)">
+            <summary>
+            分页查询项目信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.Add(Admin.NET.Application.AddProjectInput)">
+            <summary>
+            增加项目信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.Delete(Admin.NET.Application.DeleteProjectInput)">
+            <summary>
+            删除项目信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.Update(Admin.NET.Application.UpdateProjectInput)">
+            <summary>
+            更新项目信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.Get(Admin.NET.Application.QueryeProjectInput)">
+            <summary>
+            获取项目信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.List(Admin.NET.Application.ProjectInput)">
+            <summary>
+            获取项目信息列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.FkSysUserList">
+            <summary>
+            获取SysUser列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.FkCustomerList">
+            <summary>
+            获取Customer列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.ProjectService.FkCustomerMineList">
+            <summary>
+            获取Customer列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.SpareTimeDemo">
+            <summary>
+            定时任务demo
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.SpareTimeDemo.ExecSql(Furion.TaskScheduler.SpareTimer,System.Int64)">
+            <summary>
+            3秒后出勤统计
+            </summary>
+            <param name="timer">参数</param>
+            <param name="count">次数</param>
+        </member>
+        <member name="T:Admin.NET.Application.SystemAppService">
+            <summary>
+            系统服务接口
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.SystemAppService.GetDescription">
+            <summary>
+            获取系统描述
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

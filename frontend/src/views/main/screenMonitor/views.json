@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "parentId": 0,
+        "title": "封面",
+        "weight": 1,
+        "defaultChecked": true,
+        "hide": true,
+        "childrenMultiple": true
+    },
+    {
+        "id": 2,
+        "parentId": 0,
+        "title": "目录",
+        "weight": 2,
+        "defaultChecked": true,
+        "hide": true,
+        "childrenMultiple": true
+    },
+    {
+        "id": 3,
+        "parentId": 0,
+        "title": "第一章 智能化开采概述",
+        "weight": 3,
+        "defaultChecked": true,
+        "hide": false,
+        "childrenMultiple": true
+    },
+    {
+        "id": 4,
+        "parentId": 0,
+        "title": "第二章 智能化开采背景",
+        "weight": 4,
+        "defaultChecked": true,
+        "hide": false,
+        "childrenMultiple": true,
+        "children": [
+            {
+                "id": 5,
+                "parentId": 4,
+                "title": "一、智能化开采背景",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": true
+            },
+            {
+                "id": 6,
+                "parentId": 4,
+                "title": "二、工作面配套设备",
+                "weight": 2,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": true
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "parentId": 0,
+        "title": "第三章 智能化控制系统总体介绍",
+        "weight": 4,
+        "defaultChecked": true,
+        "hide": false,
+        "childrenMultiple": false,
+        "children": [
+            {
+                "id": 8,
+                "parentId": 7,
+                "title": "综采版",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": true
+            },
+            {
+                "id": 9,
+                "parentId": 7,
+                "title": "综放版",
+                "weight": 2,
+                "defaultChecked": false,
+                "hide": false,
+                "childrenMultiple": true
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "parentId": 0,
+        "title": "第四章 智能化控制系统配及功能",
+        "weight": 5,
+        "defaultChecked": true,
+        "hide": false,
+        "childrenMultiple": true,
+        "children": [
+            {
+                "id": 11,
+                "parentId": 10,
+                "title": "一、电液控制系统",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": false
+            },
+            {
+                "id": 12,
+                "parentId": 10,
+                "title": "二、采煤机通讯控制子系统",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": false
+            },
+            {
+                "id": 13,
+                "parentId": 10,
+                "title": "三、三机控制通讯子系统",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": false
+            },
+            {
+                "id": 14,
+                "parentId": 10,
+                "title": "四、智能刮板控制子系统",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": false
+            },
+            {
+                "id": 15,
+                "parentId": 10,
+                "title": "五、转载机尾自移电控子系统",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": false
+            },
+            {
+                "id": 16,
+                "parentId": 10,
+                "title": "六、皮带机自移电控子系统",
+                "weight": 1,
+                "defaultChecked": true,
+                "hide": false,
+                "childrenMultiple": false
+            }
+        ]
+    }
+]
